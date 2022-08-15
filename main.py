@@ -4,7 +4,12 @@ import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+
+import sys
+sys.path.append("./src")
+
 from runner import Runner
+
 
 app = FastAPI()
 runner = {}
