@@ -4,7 +4,6 @@ include *.pkl
 recursive-include ./src/*
 
 include dataset/ecommerceDataset.csv
-
 include ./VERSION
 
 include ./requirements.txt
