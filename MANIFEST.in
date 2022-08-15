@@ -1,0 +1,15 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./src/*
+
+include dataset/ecommerceDataset.csv
+include models/*.h5
+include ./VERSION
+
+include ./requirements.txt
+exclude *.log
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude notebooks/*
