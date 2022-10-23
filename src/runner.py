@@ -30,7 +30,7 @@ class Runner:
 
         self.model.fit(train, validation_data=val, epochs=epochs, callbacks=[tensorboard_callback, early_stopper])
 
-        save_model(self.model, "../models/bert_classify.h5")
+        save_model(self.model, "../models/bert/bert_classify.h5")
 
     def prediction(self, data):
         Xids_sample, Xmask_sample = self.preprocessor.inputs_masks(data, self.max_sequence)
